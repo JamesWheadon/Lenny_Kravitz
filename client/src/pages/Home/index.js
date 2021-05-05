@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { SignUp } from '../../components'
+import { Icons, SignUp } from '../../components'
 
 const Home = () => {
 
@@ -12,9 +12,14 @@ const Home = () => {
     return (
         <>
             <header>
-                <h1>Hello World!</h1>
-                {subscribed ? <p>Subscribed!</p> : <SignUp subscribe={subscribe}/>}
+                <h1 className="heading">LENNY KRAVITZ</h1>
             </header>
+            
+            <main className="main-container">
+                {subscribed ? <p>Subscribed!</p> : <SignUp subscribe={subscribe}/>}
+            </main>
+
+            <Icons />
         </>
     )
 }
