@@ -5,20 +5,20 @@ A Lenny Kravitz fan page built in fullstack with react on the client, flask on t
 
 ## Installation and Usage
 - Clone or download this repo
-- Navigate to root directory of this repository   
-- Open the terminal and navigate to the api subdirectory   
-    `pipenv shell`   
-    `pipenv install`   
-    `pipenv run dev`    
-    Flask API will be running on port 5000   
- 
+- Navigate to root directory of this repository
+- Open the terminal and navigate to the api subdirectory
+    - `pipenv shell`
+    - `pipenv install`
+    - `pipenv run dev`
+    - Flask API will be running on port 5000
+    
+- Navigate to the client subdirectory
+    - `npm install`
+    - `npm run dev`
+    - The client will open on port 8080
+
 To run API test suite:      
     `pipenv run test`  
-
-Navigate to the client subdirectory   
-    `npm install`    
-    `npm run dev`     
-    The client will open on port 8080      
 
 ## Technologies
 - HTML, CSS, JavaScript, Python   
