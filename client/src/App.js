@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import * as Pages from './pages';
 import { Header, Footer } from './layout'
 
-// import './style.css';
+import './style.css';
 
 function App(){
 
@@ -15,7 +15,7 @@ function App(){
             <Pages.Home />
           </Route>
           <Route path="/albums">
-            <Pages.About />
+            <Pages.Albums />
           </Route>
           <Route>
             <Pages.NotFound />

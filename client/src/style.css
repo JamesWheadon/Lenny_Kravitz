@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+body {
+font-family: 'Barlow', sans-serif;
+display: flex;
+justify-content: center
+}
+button {
+border: none;
+background-color: black;
+color: white
+}
+header {
+    margin-top: 3rem;
+}

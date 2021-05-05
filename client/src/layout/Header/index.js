@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav role="navigation">
             <NavLink exact to="/" activeClassName="current">Home</NavLink>
-            <NavLink to="/about" activeClassName="current">About</NavLink>
+            <NavLink to="/albums" activeClassName="current">Albums</NavLink>
         </nav>
     );
 }
