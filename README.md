@@ -1,25 +1,24 @@
 # Project: Flask email API and Client
 
 ## Description 
-A Lenny Kravitz fan page where users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums. 
+A Lenny Kravitz fan page built in fullstack with react on the client, flask on the server and is connected to an email service using flask-mail. Users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums. 
 
 ## Installation and Usage
-
 - Clone or download this repo
 - Navigate to root directory of this repository
 - Open the terminal and navigate to the api subdirectory
-    - `pipenv shell`
-    - `pipenv install`
-    - `pipenv run dev`
-    - Flask API will be running on port 5000
+    `pipenv shell`
+    `pipenv install`
+    `pipenv run dev`
+    Flask API will be running on port 5000
 
 To run API test suite:    
-    - `pipenv run tests` 
+    `pipenv run test`
 
 - Navigate to the client subdirectory
-    - `npm install`
-    - `npm run dev`
-    - The client will open on port 8080
+    `npm install`
+    `npm run dev`
+    The client will open on port 8080
 
 ## Technologies
 - HTML, CSS, JavaScript, Python
