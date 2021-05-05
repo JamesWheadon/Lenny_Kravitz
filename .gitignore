@@ -1,2 +1,4 @@
 client/node_modules
 .DS_Store
+api/.pytest_cache
+api/.coverage
