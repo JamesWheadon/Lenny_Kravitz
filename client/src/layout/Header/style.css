@@ -1,5 +1,5 @@
 nav {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -11,7 +11,7 @@ nav {
 }
 
 a {
-    color: rgb(131, 36, 255);
+    color: #fffc43;
     text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ a:hover {
     transition-duration: 0.7s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    color: rgb(131, 36, 255);
+    color: #ffe817;
   }
 
 .current {
