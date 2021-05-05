@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Icons } from '../../components'
 
 const Albums = () => {
 
@@ -9,20 +10,21 @@ const Albums = () => {
     const [newAlbum, setNewAlbum] = useState('')
 
     useEffect(async () => {
-        const {data} = await axios.get('http://localhost:5000/albums')
+        const { data } = await axios.get('http://localhost:5000/albums')
         setAlbums(data)
     }, [newAlbum])
 
     const renderAlbums = albums.map(a => {
-            return (<div key={a.id}>
+        return (<div className="album-container" key={a.id}>
             <h3>{a.name}</h3>
+            <img src={a.img} />
             <h4>{a['year-released']}</h4>
-            </div>)
-        })
+        </div>)
+    })
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:5000/albums', {name: albumName, "year-released": albumYear})
+        await axios.post('http://localhost:5000/albums', { name: albumName, "year-released": albumYear })
         setNewAlbum(albumName)
         setAlbumName('')
         setAlbumYear('')
@@ -41,18 +43,23 @@ const Albums = () => {
     return (
         <>
             <header>
-                <h1>Albums</h1>
-                <form className="room-form" onSubmit={handleSubmit} role="form">
-                    <label>Album Name 
+                <h1 className="heading">ALBUMS</h1>
+            </header>
+
+            <main>
+                <form onSubmit={handleSubmit} role="form">
+                    <label>Album Name
                         <input type="text" value={albumName} onChange={updateName} />
                     </label>
-                    <label>Year Album Released 
+                    <label>Year Album Released
                         <input type="text" value={albumYear} onChange={updateYear} />
                     </label>
                     <button type="submit">Add New Album</button>
                 </form>
                 {renderAlbums}
-            </header>
+            </main>
+            <Icons />
+
         </>
     )
 }
