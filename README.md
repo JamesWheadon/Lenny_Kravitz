@@ -67,5 +67,6 @@ To run API test suite:
 - Testing with flask mail - mail still sending during testing 
 - Switching between both Python and JavaScript!
 
-## Future Features 
-??
+## Collaborators
+
+[@jameswheadon](https://github.com/jameswheadon), [@natbibi](https://github.com/natbibi), [@ravil-96](https://github.com/ravil-96)
