@@ -1,4 +1,4 @@
-# Project: Flask email API and Client
+# Project: Flask email API and React Client
 
 ## Description 
 A Lenny Kravitz fan page built in fullstack with react on the client, flask on the server and is connected to an email service using flask-mail. Users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums. 
