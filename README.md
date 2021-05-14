@@ -3,6 +3,8 @@
 ## Description 
 A Lenny Kravitz fan page built in fullstack with react on the client, flask on the server and is connected to an email service using flask-mail. Users can join the mailing list, view all albums and suggest a name and release date for a new album. Subscribers will receive a welcome email and updates of new albums. 
 
+![Document](https://user-images.githubusercontent.com/58271566/118308160-8b258580-b4e3-11eb-900a-9bd4d3afaa81.gif)
+
 ## Installation and Usage
 - Clone or download this repo
 - Navigate to root directory of this repository
